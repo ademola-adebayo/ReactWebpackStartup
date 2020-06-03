@@ -72,7 +72,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      inject: true
     }),
     new webpack.ProgressPlugin(),
     new webpack.DefinePlugin({
